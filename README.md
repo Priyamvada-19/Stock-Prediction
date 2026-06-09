@@ -13,29 +13,30 @@ Facebook Prophet
 The system automatically preprocesses data, trains models, generates future forecasts, and serves predictions through a Flask-based API and web dashboard.
 
 ## Key Features
-Multi-model forecasting framework
-Automated prediction pipeline for 50 stocks
-30-business-day forward price prediction
-Historical data preprocessing and validation
-Feature engineering for temporal patterns
-REST API powered by Flask
-Interactive frontend for stock prediction queries
-Comparative model evaluation using industry-standard metrics
-Dataset
-Source: Yahoo Finance (yfinance)
-Exchange: National Stock Exchange (NSE), India
-Companies: 50 NSE-listed stocks
-Records: 122,000+ daily trading entries
-Period Covered: July 2002 – August 2020
-
+```
+1) Multi-model forecasting framework
+2) Automated prediction pipeline for 50 stocks
+3) 30-business-day forward price prediction
+4) Historical data preprocessing and validation
+5) Feature engineering for temporal patterns
+6) REST API powered by Flask
+7) Interactive frontend for stock prediction queries
+8) Comparative model evaluation using industry-standard metrics
+9) Dataset
+10) Source: Yahoo Finance (yfinance)
+11) Exchange: National Stock Exchange (NSE), India
+12) Companies: 50 NSE-listed stocks
+13) Records: 122,000+ daily trading entries
+14) Period Covered: July 2002 – August 2020
+```
 ## Features Used
-Open
-High
-Low
-Close
-Adjusted Close
-Volume
-Date-based engineered features
+1) Open
+2) High
+3) Low
+4) Close
+5) Adjusted Close
+6) Volume
+7) Date-based engineered features
 
 ## Models Implemented
 XGBoost
@@ -90,23 +91,23 @@ MAPE (Mean Absolute Percentage Error)
 
 Backend :-
 
-Python
-Flask
+1) Python
+2) Flask
 
 Machine Learning & Forecasting :-
 
-XGBoost
-Statsmodels (ARIMA)
-Prophet
-Pandas
-NumPy
-Scikit-learn
+1) XGBoost
+2) Statsmodels (ARIMA)
+3) Prophet
+4) Pandas
+5) NumPy
+6) Scikit-learn
 
 Frontend :-
 
-HTML
-CSS
-JavaScript
+1) HTML
+2) CSS
+3) JavaScript
 
 ## Project Structure
 ```
@@ -135,10 +136,10 @@ stock-price-prediction/
 ```
 
 ## Future Enhancements
-LSTM-based forecasting models
-Transformer architectures for financial forecasting
-Real-time market data integration
-Cloud deployment
-Automated model retraining
-Portfolio recommendation engine
-Risk-aware forecasting and analytics
+1) LSTM-based forecasting models
+2) Transformer architectures for financial forecasting
+3) Real-time market data integration
+4) Cloud deployment
+5) Automated model retraining
+6) Portfolio recommendation engine
+7) Risk-aware forecasting and analytics
