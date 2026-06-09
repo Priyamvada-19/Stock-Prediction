@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Stock Predictions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>NexGen <span>Predictions</span></h1>
+            <p>AI-Powered Stock Market Forecasting</p>
+        </header>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter Company Ticker (e.g. GAIL.NS)" autocomplete="off">
+                <button id="searchBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <div id="autocompleteList" class="autocomplete-items"></div>
+        </section>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing market data...</p>
+        </div>
+
+        <div id="errorMsg" class="hidden error-card"></div>
+
+        <section id="results" class="results-section hidden">
+            <!-- Next Day Prediction Card -->
+            <div class="glass-card next-day-card">
+                <div class="card-header">
+                    <h2>Next Day Forecast</h2>
+                    <span id="predictionDate" class="date-badge"></span>
+                </div>
+                <div class="prediction-content">
+                    <div class="price-group">
+                        <p class="label">Current Price</p>
+                        <p id="currentPrice" class="price val">₹--</p>
+                    </div>
+                    <div class="price-group primary-price">
+                        <p class="label">Predicted Target</p>
+                        <p id="predictedPrice" class="price val">₹--</p>
+                    </div>
+                </div>
+                <div class="prediction-footer">
+                    <div id="directionBadge" class="direction-badge">
+                        <span id="directionIcon"></span>
+                        <span id="changePercent">--%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 30-Day Forecast Chart Card (Hidden if not applicable) -->
+            <div id="chartContainer" class="glass-card chart-card hidden">
+                <div class="card-header">
+                    <h2>30-Day Outlook</h2>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="forecastChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
