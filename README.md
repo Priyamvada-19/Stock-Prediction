@@ -143,3 +143,4 @@ stock-price-prediction/
 5) Automated model retraining
 6) Portfolio recommendation engine
 7) Risk-aware forecasting and analytics
+# Financial_Stock_Prediction
